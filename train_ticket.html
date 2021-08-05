@@ -1,0 +1,158 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css_style_sheet.css">
+    <title>TRAIN</title>
+    <style>
+		img
+		{
+            height:300px; 
+            width:375px;
+        }
+		#i
+		{
+            height:75px;
+            width:75px;
+		}
+		.cmnts
+		{
+			position:relative;
+			width:80%;
+			top:15%;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			left:10%;
+		}
+			.cmnt
+		{
+			position:relative;
+			height:15%;
+			width:80%;
+			top:15%;
+			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			left:10%;
+		}
+		.button
+        {
+        background-color:#00cccc;
+        border:none;
+        color:#333;
+        padding:16px 32px;
+        text-decoration:none;
+        margin:4px 2px;
+		cursor:pointer;
+		border-radius:4px;
+		}
+		.s
+        {
+            float: left; margin: 0px 0px 0px 0px;
+            height:75px;
+            width:75px;
+        }
+		.t
+        {
+        margin-left: auto;
+		margin-right: auto;
+		border:none;
+        border-collapse: collapse;
+        }
+        th
+        {
+        color: #004d99;
+        padding: 10px;
+        }
+        td
+        {
+            padding: 10px;     
+		}
+		h2,h3
+		{
+		    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+		}
+    </style>
+</head>
+<body >
+    <script>
+        function train()
+        {var x=document.getElementById("select");
+        if(x!=null)
+            {var t=document.getElementById('yes');
+            if(t=="yes")
+                {var x="TR13012";
+                document.write("PNR:" + x);
+                }
+            else alert("choose train");
+            }
+        }
+    </script>
+<div id="body" style="position:absolute;top:0;left:0;width:100%;height:100%;background-color:black;opacity:0.5;z-index:3;visibility:hidden;">
+</div>  
+<!-- bgcolor="#871205"-->
+<div class="header">
+    <table class="center">
+    <tr>
+    <center><td><img class="s" src="train.jpg" height="150px" width="200px" position:center></td>
+    <td><h1>INDIAN RAILWAYS</h1></td></center>
+    </tr>
+    </table>
+</div>
+        <div class="topnav">
+            <a href="login.html">Home</a>
+            <a href="trainbooking.html">Trains</a>
+            <a href="train_ticket.html">Ticket viewing</a>
+            <a href="login.html">Logout</a>
+          </div>
+          <br>
+        <div class= "trains">
+            <table class="center">
+            <tr>
+                <th>TRAIN NO</th><th>TRAIN NAME</th><th>FROM</th><th>TO</th><th>DEPARTURE</th><th>ARRIVAL</th><th>SELECT</th>
+            </tr>
+            <tr>
+                <th>TR1</th><th name="train">Chennai express</th><th name="rtrain">Mumbai</th><th name="ftrain">Chennai via (Pune- 17:00)</th><th>14:00</th><th>21:00</th>
+                <th>
+                    <input type="radio" id="yes" name="select" value="yes">
+                    <label for="yes">Yes</label>&nbsp;
+                    <br><br></th>
+            </tr>  
+            <tr>
+                <th>TR2</th><th name="train">Mumbai express</th><th name="rtrain">Chennai</th><th name="ftrain">Mumbai via (Pune- 01:00)</th><th>21:00</th><th>02:00</th>
+                <th>
+                    <input type="radio" id="yes" name="select" value="yes">
+                    <label for="yes">Yes</label>&nbsp;
+                    <br><br></th>
+            </tr>
+            <tr>
+                <th>TR3</th><th name="train">Delhi express</th><th name="rtrain">Chennai</th><th name="ftrain"> Delhi</th><th>11:00</th><th>20:00</th>
+                <th>
+                    <input type="radio" id="yes" name="select" value="yes">
+                    <label for="yes">Yes</label>&nbsp;
+                    <br><br></th>
+            </tr>
+            <tr>
+                <th>TR4</th><th name="train">Kolkata express</th><th name="rtrain">Kolkata</th><th name="ftrain"> Mumbai via (Pune- 13:00)</th><th>09:00</th><th>15:00</th>
+                <th>
+                    <input type="radio" id="yes" name="select" value="yes">
+                    <label for="yes">Yes</label>&nbsp;
+                    <br><br></th>
+            </tr>
+            <tr>
+                <th>TR2</th><th name="train">Madurai express</th><th name="rtrain">Chennai</th><th name="ftrain">Madurai </th><th>16:00</th><th>17:30</th>
+                <th>
+                    <input type="radio" id="yes" name="select" value="yes">
+                    <label for="yes">Yes</label>&nbsp;
+                    <br><br></th>
+            </tr>
+            </table>
+            <input type="submit" value="confirm" id="confirm" onclick="train()">
+        </div>
+    <script>
+        function train()
+        {   var p=document.getElementById("select");        
+             if(p)
+            var x="TR13012";
+            document.write("PNR:" + x);
+        }
+    </script>
+    </body>
+    </html>

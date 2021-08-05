@@ -1,0 +1,79 @@
+<html>
+    <head>
+            <title>INDIAN RAILWAYS</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <noscript>Sorry but your browser don't support this document</noscript>
+            <link rel="stylesheet" type="text/css" href="css_style_sheet.css">
+    </head>
+    <style>
+    input[type=submit]
+    {
+        background-color: #00cccc;
+        border: none;
+        color: #333;
+        padding: 16px 32px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+    </style>
+    <body>
+    <script>
+    function validate()
+    {var x=document.getElementById("1").value;
+    var y=document.getElementById("2").value;
+    if ((x == "") || (y == "") || !y.checkValidity()) {
+    alert("Username or password incorrect");}
+    return false;
+    }
+    </script>
+    <div class="header">
+            <table class="center">
+            <tr>
+            <center><td><img class="s" src="train.jpg" height="150px" width="200px" position:center></td>
+            <td><h1>INDIAN RAILWAYS</h1></td></center>
+            </tr>
+            </table>
+    </div>
+    <div class="topnav">
+        <a href="login.html">Home</a>
+        <a href="trainbooking.html">Trains</a>
+        <a href="train_ticket.html">Ticket viewing</a>
+        <a href="login.html">Logout</a>
+      </div>
+        <br>
+        <br>
+        <div class="column">
+            <h1 style="color: #00cccc;">SIGN IN</h1>
+            <form action="#" name="reg">
+            <label for="mailid">MAIL ID:</label><br>
+            <input type="text" id="mailid" name="mailid" placeholder="Enter your mail id" required>
+            <br>
+            <br>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" min="8" max="20" name="password" placeholder="Enter your password" required>
+            <br>
+            <br>
+            <input type="Submit" name="Submit" id="Submit" onclick="check()" value="Submit">
+            </form>   
+        </div>
+       <div class="footer">
+            <p style="color:white;">&#169; 14,XYZ, Chennai Central, Chennai- INDIAN RAILWAYS </p>
+        </div>
+    </body>
+<script>
+    mailid.addEventListener("input",function(event){
+    if(matchMedia.validity.typeMismatch)
+        {email.setCustomValidity("Email syntax wrong");
+        }
+    else {email.setCustomValidity("");}
+    });
+    function check()
+    {var x=document.reg.password;
+    if(!x){alert("Please type password");
+        focus();    
+        }
+    }
+</script>
+</html>

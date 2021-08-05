@@ -1,0 +1,85 @@
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="css_style_sheet.css">
+      <title>TRAIN</title>
+        <script src="valrail.js"></script>
+    </head>
+<body>
+  <div class="header">
+    <table class="center">
+    <tr>
+    <center><td><img class="s" src="train.jpg" height="150px" width="200px" position:center></td>
+    <td><h1>INDIAN RAILWAYS</h1></td></center>
+    </tr>
+    </table>
+</div>
+  
+<div class="topnav">
+  <a href="login.html">Home</a>
+  <a href="trainbooking.html">Trains</a>
+  <a href="train_ticket.html">Ticket viewing</a>
+  <a href="login.html">Logout</a>
+</div>
+<div class="column">
+<form name="regbook" class="column">
+
+  <label for="nam"> Name:</label>
+  <input type="text" name="nam" id="nam" placeholder="eg:Anthra" onblur="v1()" required><div id="d1"></div>
+  <br>
+  <label for="age"> Age:</label>
+  <input type="number" name="age" id="age" placeholder="eg:23" min="5" max="70" onblur="v2()"required><div id="d2"></div>
+  <br>
+  <label for="phno">Phone number:</label>
+  <input type="number" name="phno" id="phno" placeholder="eg:1234567890" length="10" onblur="v3()" pattern="/^[0-9]{10}" required><div id="d3"></div>
+  <br>
+  <label for="nop"> Number of passengers:</label>
+  <input type="number" name="nop" id="nop" placeholder="2" onblur="v4()" required><div id="d4"></div>
+  <br>
+  <label for="from">From:</label>
+  <select id="from" name="from" required>
+  <option value="selec" disabled>Choose from</option>
+  <option value="Chennai">Chennai</option>
+  <option value="Pune">Pune</option>
+  <option value="Madurai">Madurai</option>
+  <option value="Delhi">Delhi</option>
+  <option value="Mumbai">Mumbai</option>
+  <option value="Kolkata">Kolkata</option>
+  </select><br><br>
+
+  <label for="to">To:</label>
+  <select id="to" name="to" required>
+  <option value="select" disabled>Choose to</option>
+  <option value="Chennai">Chennai</option>
+  <option value="Pune">Pune</option>
+  <option value="Madurai">Madurai</option>
+  <option value="Delhi">Delhi</option>
+  <option value="Mumbai">Mumbai</option>
+  <option value="Kolkata">Kolkata</option>
+  </select><br><br>
+  
+  <p>Travel Date</p>
+  <input type="text" id="date" name="date" placeholder="mm-dd-yy" onchange="v3(document.regbook.date)" required><br><br>
+  
+  <label for="class">Class:</label>
+  <select id="class" name="class" id="class" required>
+  <option value="class" disabled>Choose class</option>
+  <option value="AC1">AC 1st class</option>
+  <option value="AC2">AC 2nd class</option>
+  <option value="AC3">AC 3rd class</option>
+  <option value="NAC">Sleeper</option>
+  <option value="ecc">Exec. AC Chair car</option>
+  <option value="nacc">Non AC Chair car</option>
+  </select><br><br>
+
+  <input type="submit" name="Submit" id="Submit" onclick="classcheck()"  value="Find trains">
+  <input type="submit" name="cancel" id="cancel" onclick="cancel()" value="Cancel" >
+</form>
+</div>
+
+</body>
+
+</html>
+
+<!--onchange="classtkt(this.value);"-->

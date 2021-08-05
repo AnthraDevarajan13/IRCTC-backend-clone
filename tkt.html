@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>BOOKING</title>
+        <link rel="stylesheet" type="text/css" href="stylingfortrain.css">
+        <script src="jstrain.js"></script>
+    </head>
+<body>
+ <div id="page2" class="animated zoomInDown">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="table-responsive  text-center">
+            <table class="table table-bordered table-hover">
+              <caption class="text-center">Available Trains : </caption>
+              <thead>
+                <tr>
+                  <th> Train No</th>
+                  <th>Train Name</th>
+                  <th>Time</th>
+                  <th>Cost</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <td colspan='100%'><span class="btn btn-danger book">Book Now</span></td>
+                </tr>
+              </tfoot>
+              <tbody class="member">
+                <tr>
+                  <td class="tnum">78654</td>
+                  <td id="trainname1" class="tnam"></td>
+                  <td class="ttime">04:30 AM</td>
+                  <td class="tcost">₹ 200</td>
+                </tr>
+                <tr>
+                  <td class="tnum">54876</td>
+                  <td id="trainname2" class="tnam"></td>
+                  <td class="ttime">10:15 AM</td>
+                  <td class="tcost">₹ 250</td>
+                </tr>
+                <tr>
+                  <td class="tnum">25312</td>
+                  <td id="trainname3" class="tnam"></td>
+                  <td class="ttime">15:50 PM</td>
+                  <td class="tcost">₹ 300</td>
+                </tr>
+                <tr>
+                  <td class="tnum">45698</td>
+                  <td id="trainname4" class="tnam"></td>
+                  <td class="ttime">21:30 PM</td>
+
+                  <td class="tcost">₹350</td>
+                </tr>
+                <tr>
+                  <td class="tnum">95464</td>
+                  <td id="trainname5" class="tnam"></td>
+                  <td class="ttime">23:15 PM</td>
+
+                  <td class="tcost">₹ 500</td>
+                </tr>
+
+              </tbody>
+
+            </table>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+    <!-----page2------>
+    <div id="invis" class="animated fadeInUpBig invis">
+      <div id="selectclass">
+        <h2>Select your class :</h2>
+        <div id="trainClass">
+          <label class="blue"><input type="radio" name="toggle"><span>GEN</span></label>
+          <label class="green"><input type="radio" name="toggle"><span>SL</span></label>
+          <label class="yellow"><input type="radio" name="toggle"><span>AC1</span></label>
+          <label class="pink"><input type="radio" name="toggle"><span>AC2</span></label>
+          <label class="purple"><input type="radio" name="toggle"><span>AC3</span></label>
+        </div>
+        <div id="bfoot">
+          <div class="col-xs-6 ">
+            <span class="btn btn-primary booknow">BOOK NOW</span></div>
+          <div class="col-xs-6 ">
+            <span class="btn btn-danger bookcancel">CANCEL</span></div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+</body>
+</html>
